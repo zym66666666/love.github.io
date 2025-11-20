@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💖 甜甜的恋爱申请书</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 背景爱心动画 -->
+    <div class="hearts-background"></div>
+    
+    <!-- 主页面 -->
+    <div id="home" class="page active">
+        <div class="container">
+            <h1 class="title">💌 给亲爱的 钱钧杰</h1>
+            <p class="subtitle">点击下方按钮，查看我的心意</p>
+            <button class="start-btn" onclick="showPage('letter')">开启我的心意 💖</button>
+        </div>
+    </div>
+
+    <!-- 表白信页面 -->
+    <div id="letter" class="page">
+        <div class="letter-container">
+            <div class="letter">
+                <div class="letter-header">
+                    <h2>💖 给最爱的你 💖</h2>
+                    <span class="date" id="current-date"></span>
+                </div>
+                
+                <div class="letter-content">
+                    <p>亲爱的 <span class="highlight">钱钧杰</span>，</p>
+                    
+                    <p>从遇见你的那一刻起，我的世界就变得一坨屎</p>
+                    
+                    <p>你的笑容像狗屎一样难看，</p>
+                    <p>你的声音是像gay一样尖尖的</p>
+                    
+                    <p>还记得我们第一次见面时...</p>
+                    <p><span class="memory">看到你就想吐</span></p>
+                    
+                    <p>每一天，我都在骂着你，</p>
+                    <p>每一个梦，都有你雄厚的身影。</p>
+                    
+                    <p>我想对你说：</p>
+                    <p class="love-message">"可以跟我谈甜甜的恋爱吗？接受我的操控？"</p>
+                    
+                    <div class="signature">
+                        <p>永远爱打你的，</p>
+                        <p class="signature-name">钟芸妹💕</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="action-buttons">
+                <button class="btn yes-btn" onclick="showResponse('yes')">💖 我愿意</button>
+                <button class="btn no-btn" onmouseover="moveNoButton()">😅 再考虑一下</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 同意页面 -->
+    <div id="yes-response" class="page">
+        <div class="response-container">
+            <div class="celebration">
+                <h1>🎉 太棒了！ 💕</h1>
+                <div class="heart-animation">💖</div>
+                <p>以后我就是最尊敬的女朋友大人！</p>
+                <p>我会永远家暴你，疼惜你 ❤️</p>
+                
+                <div class="photo-gallery">
+                    <img src="images/photo1.jpg" alt="我们的回忆" class="memory-photo">
+                    <img src="images/photo2.jpg" alt="美好时光" class="memory-photo">
+                </div>
+                
+                <button class="btn back-btn" onclick="showPage('home')">再看一遍表白信 💌</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 音乐播放器 -->
+    <div class="music-player">
+        <button id="music-btn" onclick="toggleMusic()">🎵 播放音乐</button>
+        <audio id="bg-music" loop>
+            <source src="music/love-song.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
